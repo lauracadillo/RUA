@@ -1,0 +1,179 @@
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5fdf5;
+    color: #2e3d2f;
+    }
+
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    }
+
+    .nav-links {
+    display: flex;
+    gap: 15px;
+    }
+
+    .nav-links a.btn-nav,
+    .nav-links a.btn-outline-dark {
+    background: #eaf5e9;
+    border-radius: 20px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #2e3d2f;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    }
+
+    .nav-links a.btn-nav:hover,
+    .nav-links a.btn-outline-dark:hover,
+    .nav-links a.active {
+    background-color: #bcd8bc;
+    }
+
+    .hero {
+    padding: 60px 20px 20px;
+    }
+
+    .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+
+    .hero .highlight {
+    color: #28a745;
+    font-weight: bold;
+    }
+
+    .subtext {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #555;
+    }
+
+    .cards-container .card-custom {
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .cards-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    }
+
+    .cards-container .card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 128, 0, 0.1);
+    }
+
+    .social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    }
+
+    .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #ffffffdd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-icons a {
+    color: #2e3d2f;
+    font-size: 18px;
+    transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+    color: #28a745;
+    }
+
+    .btn-info a:hover {
+    background-color: #02733e;
+    color: white;
+    }
+
+    .vision-box {
+    background-color: white; 
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+
+    }
+
+    .vision-box .highlight {
+    color: #28a745;
+    font-weight: bold;
+    }
+
+    .mision-box {
+    background-color: white; 
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+
+    }
+
+    .mision-box .highlight {
+    color: #28a745;
+    font-weight: bold;
+    }
+
+
+    /* paleta de colores */
+    .verde-oscuro {
+    background-color: #02733e;
+    }
+
+    .texto-verde-oscuro {
+    color: #02733e;
+    }
+    .verde-medio {
+    background-color: #038c4c;
+    }
+
+    .verde-vivo {
+    background-color: #078c03;
+    }
+
+    .verde-claro {
+    background-color: #abbf11;
+    }
+
+    .love-ya-like-a-sister-regular {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 100;
+    font-style: normal;
+    }
+
+    .sticky-header {
+      backdrop-filter: blur(10px);
+      background-color: #ffffff;
+      transition: background-color 0.8s ease;
+    }
+
+    .boton-informacion:hover {
+  background-color: #15803d; /* verde más oscuro al pasar el mouse */
+}
