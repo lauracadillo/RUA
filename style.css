@@ -36,33 +36,7 @@
     box-shadow: 0 4px 15px rgba(0, 128, 0, 0.1);
     }
 
-    .social-sidebar {
-    position: fixed;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    z-index: 1000;
-    }
 
-    .social-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background: #ffffffdd;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .social-icons a {
-    color: #2e3d2f;
-    font-size: 18px;
-    transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-    color: #28a745;
-    }
 
     .btn-info a:hover {
     background-color: #02733e;
