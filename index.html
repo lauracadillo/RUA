@@ -16,23 +16,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
 
     <link rel="stylesheet" href="style.css" />
     </head>
 
     <body class="bg-white text-gray-800">
-        <header class="sticky top-0 z-50 sticky-header text-white flex justify-between items-center px-6 py-3">
-        <div class="logo">
-            <img src="logo.png" alt="Logo RUA" class="h-12" />
-        </div>
-        <nav class="nav-links">
-            <a href="#nosotros" class="btn btn-nav">Misión</a>
-            <a href="#nosotros" class="btn btn-nav">Visión</a>
-            <a href="equipo.html" class="btn btn-nav">Equipo</a>
-            <a href="#donaciones" class="btn btn-outline-dark">¡Dona aquí!</a>
-        </nav>  
-    </header>
+
+        <header id="header-fijo" class="sticky top-0 z-50 sticky-header text-white bg-[#02733e] flex justify-between items-center px-6 py-3">
+            <div class="logo">
+               <h1 class="text-2xl love-ya-like-a-sister-regular">RUA Perú Nodo - UNSA Arequipa</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="#nosotros" class="btn rounded-3xl text-white btn-nav font-semibold  hover:bg-white/50 hover:shadow-lg">Misión</a>
+                <a href="#nosotros" class="btn rounded-3xl  text-white btn-nav font-semibold  hover:bg-white/50 hover:shadow-lg ">Visión</a>
+                <a href="equipo.html" class="btn rounded-3xl text-white btn-nav font-semibold hover:bg-white/50 hover:shadow-lg ">Equipo</a>
+                <a href="#donaciones" class="btn rounded-3xl btn-outline-dark bg-white font-semibold hover:text-green-900 hover:underline hover:shadow-lg">Donar</a>
+            </nav>  
+        </header>
 
         <!-- Sidebar Social Links -->
     <div class="social-sidebar">
@@ -45,71 +50,61 @@
     </div>
 
     <!-- Hero Section -->
-    <header class="h-900px verde-oscuro text-white grid grid-cols-1 md:grid-cols-2">
+    <div id="hero" class="h-screen verde-oscuro text-white grid grid-cols-1 md:grid-cols-2">
         <!-- Parte izquierda: texto -->
         <div class="flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-6xl love-ya-like-a-sister-regular mb-4">RUA Perú</h1>
-        <h1 class="text-5xl love-ya-like-a-sister-regular mb-4">UNSA-Arequipa</h1>
+        <img src="LOGO-BLANCO.png" alt="Logo RUA" class="h-40" />
 
         <p class="text-xl max-w-xl">Voluntariado Ambiental sin fines de lucro comprometido con la sociedad </p>
-        <a href="index.html" class="hero-btn mt-6 bg-white text-green-900 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 ">Descubre más ... </a>
-
+        <a href="#nosotros" id="descubre-mas" class="mt-6 bg-white text-green-900 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 ">Descubre más ... </a>
         </div>
 
         <!-- Parte derecha: carrusel con Bootstrap -->
-        <div class="h-full w-full p-3">
-            <div id="carouselVoluntariado" class="carousel slide h-full" data-bs-ride="carousel">
-                <!-- Indicadores -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselVoluntariado" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
-                    <button type="button" data-bs-target="#carouselVoluntariado" data-bs-slide-to="1" aria-label="Imagen 2"></button>
-                    <button type="button" data-bs-target="#carouselVoluntariado" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+        <div class="h-full w-full p-[100px]">
+            
+            <div class="swiper mySwiper h-full rounded-3xl">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex items-center justify-center bg-gray-200 h-full">
+                        <img src="placeholder.jpg" class="object-cover h-full w-full rounded-xl" />
+                    </div>
+
+                    <div class="swiper-slide flex items-center justify-center bg-gray-200 h-full">
+                        <img src="placeholder.jpg" class="object-cover h-full w-full rounded-xl" />
+                    </div>
+
+                    <div class="swiper-slide flex items-center justify-center bg-gray-200 h-full">
+                        <img src="placeholder.jpg" class="object-cover h-full w-full rounded-xl" />
+                    </div>
+
                 </div>
 
-                <!-- Imágenes -->
-                <div class="carousel-inner h-full ">
-                    <div class="carousel-item active h-full">
-                        <img src="placeholder.jpg" class="d-block w-100 h-100 object-cover rounded-3xl" alt="Imagen 1">
-                    </div>
-                    <div class="carousel-item h-full">
-                        <img src="placeholder.jpg" class="d-block w-100 h-100 object-cover  rounded-3xl" alt="Imagen 2">
-                    </div>
-                    <div class="carousel-item h-full">
-                        <img src="placeholder.jpg" class="d-block w-100 h-100 object-cover rounded-3xl" alt="Imagen 3">
-                    </div>
-                </div>
-
-                <!-- Controles -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselVoluntariado" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselVoluntariado" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+                <!-- Controles opcionales -->
+                <div class="swiper-pagination bg-gray-200"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+
         </div>
-    </header>
+    </div>
 
 
-    <!-- Sección Sobre Nosotros -->
+    <!-- Sección Sobre Nosotros (mision y vision) -->
 
-     <section id="nosotros" class="texto-verde-oscuro py-16 bg-gray-100 grid grid-cols-12 gap-4">
+     <section id="nosotros" class=" h-screen texto-verde-oscuro py-16 bg-gray-100 grid grid-cols-12 gap-4">
 
         <div class="somos max-w-5xl mx-auto px-6 text-center col-span-10 col-start-2">
             <h2 class="text-4xl font-bold mb-6">¿Quiénes somos?</h2>
             <p class="text-lg">Somos  organización de voluntariado multidisciplinaria integrada por estudiantes de UNIVERSIDAD NACIONAL DE SAN AGUSTÍN y miembros honorarios profesionales que aportan al desarrollo del nodo.</p>
         </div>
 
-        <div class=" mision max-w-5xl mx-auto px-6 text-center col-start-2 col-end-6 shadow-lg rounded-3xl p-4">
+        <div class="mision max-w-5xl mx-auto px-6 text-center bg-white col-start-2 col-end-6 shadow-lg rounded-3xl p-4">
             <h2 class="text-4xl font-bold mb-6">Mision</h2>
-            <p class="text-lg">aqui ira escrita la mision de RUA, por ahora solo agrego texto para probar como se vera </p>
+            <p class="text-lg">Somos un voluntariado ambiental, integrado por estudiantes de educacion superior y miembros honorarios profesionales que desde el 2014 realiza actividades entorno al fortalecimiento de la ciudadania, conciencia, educacion y cultura ambiental, a traves e actividades de extension a la communidad, asi como la promocion del liderazgo ambiental, desarrollo y ejecucion de proyectos socio ambientales por parte de sus miembros con el fin de contribuir a mejorar la sostenibilidad ambiental en la region Arequipa  </p>
         </div>
 
-        <div class="vision max-w-5xl mx-auto px-6 text-center col-span-4 col-end-12 shadow-lg rounded-3xl p-4">
+        <div class="vision max-w-5xl mx-auto px-6 text-center bg-white col-span-4 col-end-12 shadow-lg rounded-3xl p-4">
             <h2 class="text-4xl font-bold mb-6">Vision</h2>
-            <p class="text-lg">aqui ira escrita la mision de RUA, por ahora solo agrego texto para probar como se vera</p>
+            <p class="text-lg">Ser un nodo reconocido a nivel nacional que contribuya en la formacion de lideres universitarios para la consolidacion de una universidad sostenible en coordinacion con autoridades e instituciones afines, contribuyendo a la solucion de la problematica socio-ambiental del pais, mediante la participacion multidisciplinaria de los estudiantes universitarios de todo el peru debidamente organizados con metas y objetivos claros, viables y programados</p>
         </div>
     </section>
 
@@ -117,55 +112,53 @@
 
 
     <!-- Mas informacion sobre RUA -->
-    <section id="informacion" class="py-16">
+    <!-- <section id="informacion" class="h-screen py-16 bg-[#abbf11]">
         <div class=" max-w-6xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12">Mas informacion</h2>
             <div class="btn-info grid md:grid-cols-3 gap-10">
-                <!-- Tarjetas de actividades -->
 
-                <a href="equipo.html" class="  shadow-lg rounded-xl p-6">
+                <a href="equipo.html" class=" bg-white shadow-lg rounded-xl p-6">
                     <i class="fas fa-people-group text-4xl  mb-4"></i>
                     <h3 class="font-bold text-xl mb-2">Nuestro equipo</h3>
                     <p>Haz clic aqui para conocer mas sobre nuestras actividades</p>
                 </a>
 
-                <a  href="#actividades" class="  shadow-lg rounded-xl p-6 ">
+                <a  href="#actividades" class=" bg-white shadow-lg rounded-xl p-6 ">
                     <i class="fas fa-tree text-4xl  mb-4"></i>
                     <h3 class="font-bold text-xl mb-2">Nuestras actividades</h3>
                     <p>Haz clic aqui para conocer mas sobre nuestras actividades</p>
 
                 </a>
 
-                <a href="#donaciones" class=" shadow-lg rounded-xl p-6">
+                <a href="#donaciones" class=" bg-white rounded-xl p-6">
                     <i class="fas fa-hand-holding-dollar text-4xl mb-4"></i>
                     <h3 class="font-bold text-xl mb-2">Colabora con Rua</h3>
                     <p>Haz clic aqui para realizar una donacion</p>
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- Sección de Actividades -->
-    <section id="actividades" class="bg-gray-100 py-16">
+    <section id="actividades" class="texto-verde-oscuro  h-screen bg-gray-100 py-16">
         <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Nuestros logros/actividades recientes</h2>
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestras actividades recientes</h2>
         <div class="grid md:grid-cols-3 gap-10">
-            <!-- Tarjetas de actividades -->
-            <div class=" text-center bg-white shadow-lg rounded-xl p-6">
-                <h3 class="font-bold text-xl mb-2">logro 1</h3>
+            <div class=" tarjetas text-center bg-white shadow-lg rounded-xl p-6">
+                <h3 class="font-bold text-xl mb-2">actividad 1</h3>
                 <p>Logramos hacer bla bla bla bla bla </p>
                 <img src="placeholder.jpg" alt="Logro 1" class="w-full h-48 object-cover rounded-lg mb-4">
 
             </div>
             <div class="  text-center bg-white shadow-lg rounded-xl p-6">
-                <h3 class="font-bold text-xl mb-2">logro 2</h3>
+                <h3 class="font-bold text-xl mb-2">actividad 2</h3>
                 <p>blablablbalbal</p>
                 <img src="placeholder.jpg" alt="Logro 1" class="w-full h-48 object-cover rounded-lg mb-4">
 
             </div>
             <div class="  text-center bg-white shadow-lg rounded-xl p-6">
-                <h3 class="font-bold text-xl mb-2">logro 3</h3>
+                <h3 class="font-bold text-xl mb-2">actividad 3</h3>
                 <p>blablbalbal</p>
                 <img src="placeholder.jpg" alt="Logro 1" class="w-full h-48 object-cover rounded-lg mb-4">
 
@@ -176,18 +169,18 @@
         </div>
     </section>
 
-    <!-- Mas informacion sobre RUA -->
-    <section id="donaciones" class="py-16">
+    <section id="donaciones" class=" texto-verde-oscuro h-screen py-16">
         <div class=" max-w-6xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12">Colabora con RUA</h2>
+            
+        
             <div class="btn-info grid md:grid-cols-3 gap-10">
-                <!-- Tarjetas de actividades -->
 
-                <div class="  text-center shadow-lg rounded-xl p-6">
+                <div class="  items-center text-center shadow-lg rounded-xl p-6">
                     <i class="fas fa-mobile-screen-button text-4xl  mb-4"></i>
                     <h3 class="font-bold text-xl mb-2">Yape</h3>
                     <p>Colabora yapeando a este QR</p>
-                    <img src="placeholder.jpg" alt="Yape QR" class="w-32 h-32 object-cover rounded-lg mb-4">
+                    <img src="placeholder.jpg" alt="Yape QR" class=" w-32 h-32 object-center rounded-lg mb-4">
                 </div>
 
                 <div class="  text-center shadow-lg rounded-xl p-6 ">
@@ -206,7 +199,7 @@
                     <p>Haz clic aqui para realizar una donacion</p>
                 </div>
             </div>
-        </div>
+            </div>
     </section>
     <!-- Footer -->
     <footer class="bg-green-900 text-white py-6 text-center">
@@ -214,6 +207,7 @@
     </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- GSAP Animation Script -->
     <script>
@@ -221,9 +215,9 @@
 
         gsap.from("#nosotros .mision", {
             scrollTrigger: {
-                trigger: "#nosotros .mision", // el elemento que activa la animación
-                start: "top 80%",               // empieza cuando el top del elemento llega al 80% del viewport
-                toggleActions: "play none none none" // solo reproduce una vez
+                trigger: "#nosotros .mision", 
+                start: "top 80%",               
+                toggleActions: "play pause resume reset" 
             },
             duration: 1.5,
             scale: 0.5, 
@@ -235,7 +229,7 @@
             scrollTrigger: {
                 trigger: "#nosotros .vision", // el elemento que activa la animación
                 start: "top 80%",               // empieza cuando el top del elemento llega al 80% del viewport
-                toggleActions: "play none none none" // solo reproduce una vez
+                toggleActions: "play pause resume reset" // solo reproduce una vez
             },
             duration: 1.5,
             scale: 0.5, 
@@ -247,7 +241,7 @@
             scrollTrigger: {
                 trigger: "#informacion a", // el elemento que activa la animación
                 start: "top 80%",               // empieza cuando el top del elemento llega al 80% del viewport
-                toggleActions: "play none none none" // solo reproduce una vez
+                toggleActions: "play pause resume reset"// solo reproduce una vez
             },
             duration: 1.5,
             scale: 0.5, 
@@ -259,7 +253,7 @@
             scrollTrigger: {
                 trigger: "#donaciones div", // el elemento que activa la animación
                 start: "top 80%",               // empieza cuando el top del elemento llega al 80% del viewport
-                toggleActions: "play none none none" // solo reproduce una vez
+                toggleActions: "play pause resume reset" // solo reproduce una vez
             },
             duration: 1.5,
             scale: 0.5, 
@@ -271,7 +265,7 @@
             scrollTrigger: {
                 trigger: "#actividades div", // el elemento que activa la animación
                 start: "top 80%",               // empieza cuando el top del elemento llega al 80% del viewport
-                toggleActions: "play none none none" // solo reproduce una vez
+                toggleActions: "play pause resume reset" // solo reproduce una vez
             },
             duration: 1.5,
             scale: 0.5, 
@@ -280,13 +274,39 @@
         });
 
 
+        gsap.to("#descubre-mas", {
+            y: -10,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut",
+            duration: 0.4
+        });
+
         // Animación con GSAP al hacer scroll 
-        gsap.from("header h1", {duration: 1.5, y: -100, opacity: 0});
-        gsap.from("header p", {duration: 1.5, delay: 0.5, y: 50, opacity: 0});
-        gsap.from("header a", {duration: 1.5, delay: 0.5, scale: 0.1, opacity: 0});
-        gsap.from("header button", {duration: 1.5, delay: 0.5, scale: 0.1, opacity: 0});
+        gsap.from("#hero img", {duration: 1.5, y: -100, opacity: 0});
+        gsap.from("#hero p", {duration: 1.5, delay: 0.5, y: 50, opacity: 0});
+        gsap.from("#hero a", {duration: 1.5, delay: 0.5, scale: 0.1, opacity: 0});
+        gsap.from("#hero button", {duration: 1.5, delay: 0.5, scale: 0.1, opacity: 0});
         gsap.from(".social-sidebar", {duration: 1.5, x: -100, opacity: 0});
         
+
+        
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+            delay: 3000,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+
+
     </script>
     </body>
     </html>

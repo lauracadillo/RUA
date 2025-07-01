@@ -5,59 +5,13 @@
     color: #2e3d2f;
     }
 
-    .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
-    }
-
-    .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    }
 
     .nav-links {
     display: flex;
     gap: 15px;
     }
 
-    .nav-links a.btn-nav,
-    .nav-links a.btn-outline-dark {
-    background: #eaf5e9;
-    border-radius: 20px;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: #2e3d2f;
-    margin-right: 10px;
-    transition: background-color 0.3s;
-    }
 
-    .nav-links a.btn-nav:hover,
-    .nav-links a.btn-outline-dark:hover,
-    .nav-links a.active {
-    background-color: #bcd8bc;
-    }
-
-    .hero {
-    padding: 60px 20px 20px;
-    }
-
-    .hero h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-family: "Love Ya Like A Sister", cursive;
-    font-weight: 400;
-    font-style: normal;
-    }
-
-
-    .hero .highlight {
-    color: #28a745;
-    font-weight: bold;
-    }
 
     .subtext {
     margin-top: 15px;
@@ -168,12 +122,19 @@
     font-style: normal;
     }
 
-    .sticky-header {
-      backdrop-filter: blur(10px);
-      background-color: #ffffff;
-      transition: background-color 0.8s ease;
-    }
 
-    .boton-informacion:hover {
-  background-color: #15803d; /* verde más oscuro al pasar el mouse */
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #abbf11; /* Cambia este valor por el color que desees */
+  }
+
+  .swiper-pagination-bullet {
+  background-color: #abbf11; /* Color normal */
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #abbf11; /* Bullet activo */
+  opacity: 1;
 }
